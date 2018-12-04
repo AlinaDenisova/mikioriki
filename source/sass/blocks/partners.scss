@@ -16,7 +16,7 @@
 
 .partners__title {
   margin: 0;
-  font-size: 3.1vw;
+  font-size: 4.6vw;
   line-height: 0.88;
   color: $gray;
   text-transform: uppercase;
@@ -62,5 +62,9 @@
   .partners__link {
     width: 18vw;
     height: 10vw;
+  }
+
+  .partners__title {
+    font-size:  3.1vw;
   }
 }

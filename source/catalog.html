@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Мармелад, продажа, купить, конфеты, пищевой, высокое, качество, желейный, фрктовый, сок">
+    <meta name="description" content="Интернет-магазин «Mikioriki» - вкусный и полезный мармелад">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Интернет-магазин «Milioriki»</title>
+    <link rel="preload" href="fonts/Circe-Regular.woff2" as="font" crossorigin="">
+    <link rel="preload" href="fonts/MyriadPro-Bold.woff2" as="font" crossorigin="">
+    <link rel="preload" href="fonts/MyriadPro-Regular.woff2" as="font" crossorigin="">
+    <link rel="preload" href="fonts/PTSans-Bold.woff2" as="font" crossorigin="">
+    <link rel="preload" href="fonts/PTSans-Regular.woff2" as="font" crossorigin="">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+
+  <body class="no-js">
+    <header class="page-header page-header--closed page-header--inner">
+      <div class="page-header__container">
+        <div class="page-header__logo">
+          <a class="page-header__logo-link" href="index.html">
+            <picture class="page-header__logo-img">
+              <source media="(min-width: 1100px)" srcset="img/logo.png">
+              <img src="img/logo-small.png" alt="Логотип интрнет-магазина «Mikioriki»">
+            </picture>
+          </a>
+        </div>
+
+        <button class="page-header__toggle" type="button">
+          <span class="page-header__toggle-line"></span>
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+
+        <ul class="site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--active">Продукция</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Качество и безопасность</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <section class="catalog">
+        <div class="catalog__container">
+          <h1 class="catalog__title">Наша продукция</h1>
+            <ul class="catalog__list">
+              <li class="catalog__item catalog-card">
+                <div class="catalog-card__img">
+                  <img src="img/product-1.jpg" alt="Изображение товара" width="249" height="342">
+                </div>
+                <div class="catalog-card__text">
+                  <h2 class="catalog-card__title">Медвежата с облепиховым соком</h2>
+                  <span class="catalog-card__add">С витамином C</span>
+                  <p class="catalog-card__descr">Подлинная страсть к мармеладу, тщательно отобранные ингредиенты, гарантия качества и безопасности продукта.</p>
+                  <button class="btn catalog-card__btn" data-modal="#Popup1">Узнать больше</button>
+                </div>
+             </li>
+             <li class="catalog__item catalog-card">
+                <div class="catalog-card__img">
+                  <img src="img/product-2.jpg" alt="Изображение товара" width="249" height="342">
+                </div>
+                <div class="catalog-card__text">
+                  <h2 class="catalog-card__title">Желейные ягоды с фруктовым соком</h2>
+                  <span class="catalog-card__add">С витамином C</span>
+                  <p class="catalog-card__descr">Подлинная страсть к мармеладу, тщательно отобранные ингредиенты, гарантия качества и безопасности продукта.</p>
+                  <button class="btn catalog-card__btn" data-modal="#Popup2">Узнать больше</button>
+                </div>
+             </li>
+             <li class="catalog__item catalog-card">
+                <div class="catalog-card__img">
+                  <img src="img/product-3.jpg" alt="Изображение товара" width="249" height="342">
+                </div>
+                <div class="catalog-card__text">
+                  <h2 class="catalog-card__title">Сердечки с фруктовым соком</h2>
+                  <span class="catalog-card__add">С витамином C</span>
+                  <p class="catalog-card__descr">Подлинная страсть к мармеладу, тщательно отобранные ингредиенты, гарантия качества и безопасности продукта.</p>
+                  <button class="btn catalog-card__btn" data-modal="#Popup3">Узнать больше</button>
+                </div>
+             </li>
+             <li class="catalog__item catalog-card">
+                <div class="catalog-card__img">
+                  <img src="img/product-4.jpg" alt="Изображение товара" width="249" height="342">
+                </div>
+                <div class="catalog-card__text">
+                  <h2 class="catalog-card__title">Лесные ягоды</h2>
+                  <span class="catalog-card__add">Без желатина, с натуральным фруктовым соком и витамином C</span>
+                  <p class="catalog-card__descr">Подлинная страсть к мармеладу, тщательно отобранные ингредиенты, гарантия качества и безопасности продукта.</p>
+                  <button class="btn catalog-card__btn" data-modal="#Popup4">Узнать больше</button>
+                </div>
+             </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="popups">
+        <div class="popup" id="Popup1">
+          <button class="popup__close-btn" type="button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <div class="popup__container">
+            <h3 class="popup__title">Медвежата с облепиховым соком</h3>
+            <span class="popup__add">(c витамином C)</span>
+            <div class="popup__energy">
+              <h3 class="popup__energy-title">Энергетическая ценность:</h3>
+              <span class="popup__energy-add">на 100 г продукта</span>
+              <span class="popup__energy-value">1425 кДж  /  335 ккал, витамин С – 20 мг</span>
+            </div>
+            <div class="popup__nutritional">
+              <h3 class="popup__nutritional-title">Пищевая ценность:</h3>
+              <span class="popup__nutritional-value">Углеводы – 77 г</span>
+              <span class="popup__nutritional-value">Белки – 5,3 г</span>
+              <span class="popup__nutritional-value">Жиры – 0,1 г</span>
+            </div>
+            <div class="popup__composition">
+              <h3 class="popup__composition-title">Состав:</h3>
+              <p class="popup__composition-text">Cироп глюкозы, сахар, вода, желатин, регуляторы кислотности лимонная кислота и молочная кислота, концентрированный фруктовый сок (вишня, клубника, малина, красная смородина), желирующий агент пектин, натуральные ароматизаторы (вишня (носители пропиленгликоль, триацетин; ароматическая субстанция, этанол), клубника (носитель пропиленгликоль, ароматическая субстанция), малина (носитель пропиленгликоль, ароматическая субстанция, этанол), красная смородина (носитель пропиленгликоль, ароматическая субстанция, этанол)), натуральные красители (экстракты черной смородины, моркови, бузины, винограда), витамин С (аскорбиновая кислота), глазирователи воск пчелиный и воск карнаубский.</p>
+            </div>
+            <a class="popup__certificate" href="#" download="">Свидетельство о государственной регистрации</a>
+            <div class="popup__manufacturer">
+              <h3 class="popup__manufacturer-title">Изготовитель:</h3>
+                <span class="popup__manufacturer-name">Trolli GmbH</span>
+                <div class="popup__manufacturer-img">
+                  <img src="img/manufacturer-1.jpg" alt="Лоого изготовителя товара" width="97" height="53">
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="popup" id="Popup2">
+          <button class="popup__close-btn" type="button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <div class="popup__container">
+            <h3 class="popup__title">Желейные ягоды с фруктовым соком</h3>
+            <span class="popup__add">(с витамином C)</span>
+            <div class="popup__energy">
+              <h3 class="popup__energy-title">Энергетическая ценность:</h3>
+              <span class="popup__energy-add">на 100 г продукта</span>
+              <span class="popup__energy-value">1425 кДж  /  335 ккал, витамин С – 20 мг</span>
+            </div>
+            <div class="popup__nutritional">
+              <h3 class="popup__nutritional-title">Пищевая ценность:</h3>
+              <span class="popup__nutritional-value">Углеводы – 77 г</span>
+              <span class="popup__nutritional-value">Белки – 5,3 г</span>
+              <span class="popup__nutritional-value">Жиры – 0,1 г</span>
+            </div>
+            <div class="popup__composition">
+              <h3 class="popup__composition-title">Состав:</h3>
+              <p class="popup__composition-text">Cироп глюкозы, сахар, вода, желатин, регуляторы кислотности лимонная кислота и молочная кислота, концентрированный фруктовый сок (вишня, клубника, малина, красная смородина), желирующий агент пектин, натуральные ароматизаторы (вишня (носители пропиленгликоль, триацетин; ароматическая субстанция, этанол), клубника (носитель пропиленгликоль, ароматическая субстанция), малина (носитель пропиленгликоль, ароматическая субстанция, этанол), красная смородина (носитель пропиленгликоль, ароматическая субстанция, этанол)), натуральные красители (экстракты черной смородины, моркови, бузины, винограда), витамин С (аскорбиновая кислота), глазирователи воск пчелиный и воск карнаубский.</p>
+            </div>
+            <a class="popup__certificate" href="#" download="">Свидетельство о государственной регистрации</a>
+            <div class="popup__manufacturer">
+              <h3 class="popup__manufacturer-title">Изготовитель:</h3>
+                <span class="popup__manufacturer-name">Trolli GmbH</span>
+                <div class="popup__manufacturer-img">
+                  <img src="img/manufacturer-1.jpg" alt="Лоого изготовителя товара" width="97" height="53">
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="popup" id="Popup3">
+          <button class="popup__close-btn" type="button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <div class="popup__container">
+            <h3 class="popup__title">Сердечки с фруктовым соком</h3>
+            <span class="popup__add">(c витамином C)</span>
+            <div class="popup__energy">
+              <h3 class="popup__energy-title">Энергетическая ценность:</h3>
+              <span class="popup__energy-add">на 100 г продукта</span>
+              <span class="popup__energy-value">1425 кДж  /  335 ккал, витамин С – 20 мг</span>
+            </div>
+            <div class="popup__nutritional">
+              <h3 class="popup__nutritional-title">Пищевая ценность:</h3>
+              <span class="popup__nutritional-value">Углеводы – 77 г</span>
+              <span class="popup__nutritional-value">Белки – 5,3 г</span>
+              <span class="popup__nutritional-value">Жиры – 0,1 г</span>
+            </div>
+            <div class="popup__composition">
+              <h3 class="popup__composition-title">Состав:</h3>
+              <p class="popup__composition-text">Cироп глюкозы, сахар, вода, желатин, регуляторы кислотности лимонная кислота и молочная кислота, концентрированный фруктовый сок (вишня, клубника, малина, красная смородина), желирующий агент пектин, натуральные ароматизаторы (вишня (носители пропиленгликоль, триацетин; ароматическая субстанция, этанол), клубника (носитель пропиленгликоль, ароматическая субстанция), малина (носитель пропиленгликоль, ароматическая субстанция, этанол), красная смородина (носитель пропиленгликоль, ароматическая субстанция, этанол)), натуральные красители (экстракты черной смородины, моркови, бузины, винограда), витамин С (аскорбиновая кислота), глазирователи воск пчелиный и воск карнаубский.</p>
+            </div>
+            <a class="popup__certificate" href="#" download="">Свидетельство о государственной регистрации</a>
+            <div class="popup__manufacturer">
+              <h3 class="popup__manufacturer-title">Изготовитель:</h3>
+                <span class="popup__manufacturer-name">Trolli GmbH</span>
+                <div class="popup__manufacturer-img">
+                  <img src="img/manufacturer-1.jpg" alt="Лоого изготовителя товара" width="97" height="53">
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="popup" id="Popup4">
+          <button class="popup__close-btn" type="button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <div class="popup__container">
+            <h3 class="popup__title">Лесные ягоды</h3>
+            <span class="popup__add">(без желатина, с натуральным фруктовым соком и витамином C)</span>
+            <div class="popup__energy">
+              <h3 class="popup__energy-title">Энергетическая ценность:</h3>
+              <span class="popup__energy-add">на 100 г продукта</span>
+              <span class="popup__energy-value">1425 кДж  /  335 ккал, витамин С – 20 мг</span>
+            </div>
+            <div class="popup__nutritional">
+              <h3 class="popup__nutritional-title">Пищевая ценность:</h3>
+              <span class="popup__nutritional-value">Углеводы – 77 г</span>
+              <span class="popup__nutritional-value">Белки – 5,3 г</span>
+              <span class="popup__nutritional-value">Жиры – 0,1 г</span>
+            </div>
+            <div class="popup__composition">
+              <h3 class="popup__composition-title">Состав:</h3>
+              <p class="popup__composition-text">Cироп глюкозы, сахар, вода, желатин, регуляторы кислотности лимонная кислота и молочная кислота, концентрированный фруктовый сок (вишня, клубника, малина, красная смородина), желирующий агент пектин, натуральные ароматизаторы (вишня (носители пропиленгликоль, триацетин; ароматическая субстанция, этанол), клубника (носитель пропиленгликоль, ароматическая субстанция), малина (носитель пропиленгликоль, ароматическая субстанция, этанол), красная смородина (носитель пропиленгликоль, ароматическая субстанция, этанол)), натуральные красители (экстракты черной смородины, моркови, бузины, винограда), витамин С (аскорбиновая кислота), глазирователи воск пчелиный и воск карнаубский.</p>
+            </div>
+            <a class="popup__certificate" href="#" download="">Свидетельство о государственной регистрации</a>
+            <div class="popup__manufacturer">
+              <h3 class="popup__manufacturer-title">Изготовитель:</h3>
+                <span class="popup__manufacturer-name">Trolli GmbH</span>
+                <div class="popup__manufacturer-img">
+                  <img src="img/manufacturer-1.jpg" alt="Лоого изготовителя товара" width="97" height="53">
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="partners">
+        <div class="partners__container">
+          <h2 class="partners__title">Где купить</h2>
+          <ul class="partners__slides owl-carousel slider">
+            <li class="partners__slide">
+              <a class="partners__link" href="#">
+                <img src="img/company-1.png" alt="Лого компании" width="271" height="51">
+              </a>
+            </li>
+            <li class="partners__slide">
+              <a class="partners__link" href="#">
+                <img src="img/company-2.png" alt="Лого компании" width="256" height="117">
+              </a>
+            </li>
+            <li class="partners__slide">
+              <a class="partners__link" href="#">
+                <img src="img/company-3.png" alt="Лого компании" width="260" height="89">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__container">
+        <div class="page-footer__wrapper">
+          <div class="page-footer__logo">
+            <a class="page-footer__logo-link">
+              <img src="img/logo-small.png" width="200" height="44" alt="Логотип компании «Mikioriki»">
+            </a>
+          </div>
+          <div class="page-footer__copyright">
+            <p class="page-footer__copyright-text">© ООО «Брента»</p>
+          </div>
+        </div>
+
+        <div class="page-footer__social">
+          <ul class="page-footer__social-list">
+            <li class="page-footer__social-item page-footer__social-item--vk">
+              <a class="page-footer__social-link" href="#">
+                <span class="visually-hidden">Vk</span>
+              </a>
+            </li>
+            <li class="page-footer__social-item page-footer__social-item--fb">
+              <a class="page-footer__social-link" href="#">
+                <span class="visually-hidden">Facebook</span>
+              </a>
+            </li>
+            <li class="page-footer__social-item page-footer__social-item--youtube">
+              <a class="page-footer__social-link" href="#">
+                <span class="visually-hidden">Youtube</span>
+              </a>
+            </li>
+            <li class="page-footer__social-item page-footer__social-item--inst">
+              <a class="page-footer__social-link" href="#">
+                <span class="visually-hidden">Instagram</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="page-footer__development">
+          <a class="page-footer__development-link" href="https://pixelplus.ru/">
+            <span class="page-footer__development-text">Создание сайта&nbsp;– <br>компания «Пиксель Плюс»</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <div class="overlay"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="js/picturefill.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/all.js"></script>
+  </body>
+</html>
