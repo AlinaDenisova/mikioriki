@@ -1,0 +1,140 @@
+.social {
+  background-color: #feebb9;
+}
+
+.social__container {
+  @include container;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 50vw;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.social__title {
+  margin: 0;
+  font-size: 3vw;
+  line-height: 1.24;
+  color: $gray;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: $ptsans-bold;
+  margin-bottom: 0.5vw;
+}
+
+.social__text {
+  color: #ae944e;
+  font-size: 1.4vw;
+  line-height: 1.27;
+  width: 50%;
+  font-family: $circe;
+  margin: 0;
+  margin-bottom: 3vw;
+}
+
+.social__list {
+  @include list-reset;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.social__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2vw;
+}
+
+.social__link {
+  width: 20vw;
+  height: 20vw;
+  display: block;
+  box-shadow: inset 0 -6px 0 rgba(0, 0, 0, 0.17);
+  border-radius: 25%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  outline: none;
+  margin-bottom: 1.4vw;
+
+  &--vk {
+    background-image: url('../img/icon-vk.png');
+  }
+
+  &--fb {
+    background-image: url('../img/icon-fb.png');
+  }
+
+  &--youtube {
+    background-image: url('../img/icon-youtube.png');
+  }
+
+  &--inst {
+    background-image: url('../img/icon-inst.png');
+  }
+
+  &:hover::before,
+  &:focus::before {
+    width: 20vw;
+    height: 20vw;
+    border-radius: 25%;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    opacity: 0.2;
+    z-index: 2;
+  }
+
+  &:active {
+    box-shadow: inset 0 6px 0 0 rgba(1, 1, 1, 0.25);
+  }
+}
+
+.social__link-text {
+  color: #ae944e;
+  font-family: $circe;
+  font-size: 1.4vw;
+  line-height: 1.27;
+}
+
+@media (min-width: $desktop-width) {
+  .social {
+    width: 38%;
+  }
+
+  .social__container {
+    min-height: 30.5vw;
+    padding: 50px 8%;
+    justify-content: flex-start;
+  }
+
+  .social__title {
+    padding-top: 3vw;
+  }
+
+  .social__list {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .social__item {
+    margin-right: 5%;
+    margin-bottom: 0;
+  }
+
+  .social__link {
+    width: 6.5vw;
+    height: 6.5vw;
+
+    &:hover::before,
+    &:focus::before {
+      width: 6.5vw;
+      height: 6.5vw;
+    }
+  }
+}

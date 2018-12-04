@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Мармелад, продажа, купить, конфеты, пищевой, высокое, качество, желейный, фрктовый, сок">
+    <meta name="description" content="Интернет-магазин «Mikioriki» - вкусный и полезный мармелад">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Интернет-магазин «Milioriki»</title>
+    <link rel="preload" href="fonts/Circe-Regular.woff2" as="font" crossorigin="">
+    <link rel="preload" href="fonts/MyriadPro-Bold.woff2" as="font" crossorigin="">
+    <link rel="preload" href="fonts/MyriadPro-Regular.woff2" as="font" crossorigin="">
+    <link rel="preload" href="fonts/PTSans-Bold.woff2" as="font" crossorigin="">
+    <link rel="preload" href="fonts/PTSans-Regular.woff2" as="font" crossorigin="">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+
+  <body class="no-js">
+    <header class="page-header page-header--closed">
+      <div class="page-header__container">
+        <div class="page-header__logo">
+          <a class="page-header__logo-link">
+            <picture class="page-header__logo-img">
+              <source media="(min-width: 1100px)" srcset="img/logo.png">
+              <img src="img/logo-small.png" alt="Логотип интрнет-магазина «Mikioriki»">
+            </picture>
+          </a>
+        </div>
+
+        <button class="page-header__toggle" type="button">
+          <span class="page-header__toggle-line"></span>
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+
+        <ul class="site-list">
+          <li class="site-list__item">
+            <a class="site-list__link">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Продукция</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Качество и безопасность</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </div>
+
+      <section class="promo-video">
+        <video id="video-start" hidden muted="muted">
+          <source src="video/start.mp4" type="video/mp4" width="1506" height="870">
+        </video>
+        <video id="video-end" hidden muted="muted">
+          <source src="video/end.mp4" type="video/mp4" width="1506" height="870">
+        </video>
+        <div>
+          <canvas class="promo-video__canvas" id="myCanvas" width="1506" height="870">
+        </div>
+      </section>
+    </header>
+
+    <main class="page-main">
+      <div class="page-main__wrapper">
+        <section class="promo-catalog">
+          <div class="promo-catalog__container">
+            <h2 class="promo-catalog__title"><a href="#">Продукция</a></h2>
+            <p class="promo-catalog__text">Весь ассортимент на одной странице</p>
+            <a class="btn promo-catalog__btn">Посмотреть</a>
+          </div>
+        </section>
+        <section class="promo-quantity">
+          <div class="promo-quantity__container">
+            <h2 class="promo-quantity__title"><a href="#">Качество</a></h2>
+            <p class="promo-quantity__text">Вся продукция сертифицирована</p>
+          </div>
+        </section>
+      </div>
+      <div class="page-main__wrapper">
+        <section class="social">
+          <div class="social__container">
+            <h2 class="social__title">Мы в соцсетях</h2>
+            <p class="social__text">Присоединяйтесь!</p>
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--vk" href="#"></a>
+                <span class="social__link-text">Vkontakte</span>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--fb" href="#"></a>
+                <span class="social__link-text">Facebook</span>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--youtube" href="#"></a>
+                <span class="social__link-text">Youtube</span>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--inst" href="#"></a>
+                <span class="social__link-text">Instagram</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="company-info">
+          <div class="company-info__container">
+            <h2 class="company-info__title">О компании</h2>
+            <p class="company-info__text">Компания «БРЕНТА» создает товары для красоты и здоровья. Нашими приоритетами являются эффективность и качество продукции. Продукция – биологически активные добавки к пище и косметика – создается специально для продажи в аптеках. Мы сотрудничаем с ведущими европейскими и российскими производственными предприятиями, продукты которых прошли проверку временем и стали эталоном качества в своих товарных категориях.</p>
+            <ul class="company-info__slides owl-carousel">
+              <li class="company-info__slide company-info__slide--1">
+              </li>
+              <li class="company-info__slide company-info__slide--2">
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+      <section class="partners">
+        <div class="partners__container">
+          <h2 class="partners__title">Где купить</h2>
+          <ul class="partners__slides owl-carousel slider">
+            <li class="partners__slide">
+              <a class="partners__link" href="#">
+                <img src="img/company-1.png" alt="Лого компании" width="271" height="51">
+              </a>
+            </li>
+            <li class="partners__slide">
+              <a class="partners__link" href="#">
+                <img src="img/company-2.png" alt="Лого компании" width="256" height="117">
+              </a>
+            </li>
+            <li class="partners__slide">
+              <a class="partners__link" href="#">
+                <img src="img/company-3.png" alt="Лого компании" width="260" height="89">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__container">
+        <div class="page-footer__wrapper">
+          <div class="page-footer__logo">
+            <a class="page-footer__logo-link">
+              <img src="img/logo-small.png" width="200" height="44" alt="Логотип компании «Mikioriki»">
+            </a>
+          </div>
+          <div class="page-footer__copyright">
+            <p class="page-footer__copyright-text">© ООО «Брента»</p>
+          </div>
+        </div>
+
+        <div class="page-footer__social">
+          <ul class="page-footer__social-list">
+            <li class="page-footer__social-item page-footer__social-item--vk">
+              <a class="page-footer__social-link" href="#">
+                <span class="visually-hidden">Vk</span>
+              </a>
+            </li>
+            <li class="page-footer__social-item page-footer__social-item--fb">
+              <a class="page-footer__social-link" href="#">
+                <span class="visually-hidden">Facebook</span>
+              </a>
+            </li>
+            <li class="page-footer__social-item page-footer__social-item--youtube">
+              <a class="page-footer__social-link" href="#">
+                <span class="visually-hidden">Youtube</span>
+              </a>
+            </li>
+            <li class="page-footer__social-item page-footer__social-item--inst">
+              <a class="page-footer__social-link" href="#">
+                <span class="visually-hidden">Instagram</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="page-footer__development">
+          <a class="page-footer__development-link" href="https://pixelplus.ru/">
+            <span class="page-footer__development-text">Создание сайта&nbsp;– <br>компания «Пиксель Плюс»</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/picturefill.js"></script>
+    <script src="js/all.js"></script>
+  </body>
+</html>

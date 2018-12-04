@@ -1,0 +1,50 @@
+body {
+  min-width: 320px;
+  margin: 0 auto;
+  font-weight: 400;
+  background-color: #ffffff;
+  color: $gray;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+}
+
+button,
+textarea,
+input[type="text"] {
+  font-family: inherit;
+
+}
+
+button:focus,
+textarea:focus,
+input:focus,
+button:hover,
+textarea:hover,
+input:hover,
+button:active,
+textarea:active,
+input:active {
+  outline: none;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+label.visually-hidden:active {
+  display: none;
+}
