@@ -23,7 +23,7 @@
     "@htmlacademy/editorconfig-cli": "^1.0.0",
     "browser-sync": "^2.24.5",
     "del": "^3.0.0",
-    "gulp": "4.0.x",
+    "gulp": "^4.0.0",
     "gulp-autoprefixer": "^5.0.0",
     "gulp-cache": "^1.0.2",
     "gulp-concat": "^2.6.1",

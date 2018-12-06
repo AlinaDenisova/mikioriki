@@ -3,8 +3,8 @@
   font-display: swap;
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/Circe-Regular.woff2") format("woff2"),
-    url("../fonts/Circe-Regular.woff") format("woff");
+  src: url("/fonts/Circe-Regular.woff2") format("woff2"),
+    url("/fonts/Circe-Regular.woff") format("woff");
 }
 
 @font-face {
@@ -12,8 +12,8 @@
   font-display: swap;
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/MyriadPro-Bold.woff2") format("woff2"),
-    url("../fonts/MyriadPro-Bold.woff") format("woff");
+  src: url("/fonts/MyriadPro-Bold.woff2") format("woff2"),
+    url("/fonts/MyriadPro-Bold.woff") format("woff");
 }
 
 @font-face {
@@ -21,8 +21,8 @@
   font-display: swap;
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/MyriadPro-Regular.woff2") format("woff2"),
-    url("../fonts/MyriadPro-Regular.woff") format("woff");
+  src: url("/fonts/MyriadPro-Regular.woff2") format("woff2"),
+    url("/fonts/MyriadPro-Regular.woff") format("woff");
 }
 
 @font-face {
@@ -30,8 +30,8 @@
   font-display: swap;
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/PTSans-Bold.woff2") format("woff2"),
-    url("../fonts/PTSans-Bold.woff") format("woff");
+  src: url("/fonts/PTSans-Bold.woff2") format("woff2"),
+    url("/fonts/PTSans-Bold.woff") format("woff");
 }
 
 @font-face {
@@ -39,6 +39,6 @@
   font-display: swap;
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/PTSans-Regular.woff2") format("woff2"),
-    url("../fonts/PTSans-Regular.woff") format("woff");
+  src: url("/fonts/PTSans-Regular.woff2") format("woff2"),
+    url("/fonts/PTSans-Regular.woff") format("woff");
 }

@@ -7,8 +7,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 50vw;
-  background-image: url('../img/catalog-bg.png');
+  min-height: 60vw;
+  background-image: url('/img/catalog-bg.png');
   background-size: auto;
   background-size: 50vw 90%;
   background-repeat: no-repeat;
@@ -19,14 +19,14 @@
 
 .promo-catalog__title {
   margin: 0;
-  font-size: 8vw;
+  font-size: 7vw;
   line-height: 0.82;
   color: #ffffff;
   text-transform: uppercase;
   font-weight: 700;
   font-family: $ptsans-bold;
   display: block;
-  margin-bottom: 2vw;
+  margin-bottom: 4vw;
 
   & a {
     color: inherit;

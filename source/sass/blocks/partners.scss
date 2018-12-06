@@ -1,6 +1,7 @@
 .partners {
   background-color: #f1f5f6;
   box-shadow: inset 0 1vw 4vw -0.5vw rgba(1, 1, 1, 0.58);
+  padding: 0 10vw;  
 }
 
 .partners__container {
@@ -16,7 +17,7 @@
 
 .partners__title {
   margin: 0;
-  font-size: 8vw;
+  font-size: 7vw;
   line-height: 0.88;
   color: $gray;
   text-transform: uppercase;
