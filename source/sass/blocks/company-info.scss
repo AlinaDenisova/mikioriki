@@ -16,7 +16,7 @@
 
 .company-info__title {
   margin: 0;
-  font-size: 4.3vw;
+  font-size: 8vw;
   line-height: 0.88;
   color: #ffffff;
   text-transform: uppercase;
@@ -32,7 +32,7 @@
 
 .company-info__text {
   color: #ffffff;
-  font-size: 1.46vw;
+  font-size: 4vw;
   line-height: 1.23;
   width: 100%;
   margin: 0;
@@ -65,6 +65,7 @@
   .company-info__title {
     width: 100%;
     display: block;
+    font-size: 4.3vw;
   }
 
   .company-info__slides {
@@ -108,5 +109,6 @@
   .company-info__text {
     width: 53%;
     margin-right: 2%;
+    font-size: 1.46vw;
   }
 }

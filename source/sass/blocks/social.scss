@@ -14,7 +14,7 @@
 
 .social__title {
   margin: 0;
-  font-size: 4vw;
+  font-size: 6vw;
   line-height: 1.24;
   color: $gray;
   text-transform: uppercase;
@@ -25,7 +25,7 @@
 
 .social__text {
   color: #ae944e;
-  font-size: 1.4vw;
+  font-size: 4vw;
   line-height: 1.27;
   width: 50%;
   font-family: $circe;
@@ -98,7 +98,7 @@
 .social__link-text {
   color: #ae944e;
   font-family: $circe;
-  font-size: 1.4vw;
+  font-size: 4vw;
   line-height: 1.27;
 }
 
@@ -116,6 +116,7 @@
   .social__title {
     padding-top: 3vw;
     font-size: 3vw;
+    font-size: 4vw;
   }
 
   .social__list {
@@ -128,6 +129,10 @@
     margin-bottom: 0;
   }
 
+  .social__text {
+    font-size: 1.4vw;
+  }
+
   .social__link {
     width: 6.5vw;
     height: 6.5vw;
@@ -137,5 +142,9 @@
       width: 6.5vw;
       height: 6.5vw;
     }
+  }
+
+  .social__link-text {
+    font-size: 1.4vw;
   }
 }

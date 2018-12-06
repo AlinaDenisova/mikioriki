@@ -19,7 +19,7 @@
 
 .promo-catalog__title {
   margin: 0;
-  font-size: 4.6vw;
+  font-size: 8vw;
   line-height: 0.82;
   color: #ffffff;
   text-transform: uppercase;
@@ -35,7 +35,7 @@
 
 .promo-catalog__text {
   color: #ffffff;
-  font-size: 1.45vw;
+  font-size: 4vw;
   line-height: 1.27;
   width: 50%;
   margin: 0;
@@ -60,5 +60,10 @@
 
   .promo-catalog__title {
     padding-top: 5.6vw;
+    font-size: 4.6vw;
+  }
+
+  .promo-catalog__text {
+    font-size: 1.45vw;
   }
 }
