@@ -55,6 +55,12 @@
   }
 }
 
+a.contacts__info:hover,
+a.contacts__info:focus,
+a.contacts__info:active {
+  color: $green;
+}
+
 .contacts__map {
   background-image: url("../img/map.jpg");
   background-repeat: no-repeat;

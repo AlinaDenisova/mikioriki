@@ -10,7 +10,7 @@
   box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
   box-sizing: border-box;
   z-index: 5;
-  height: auto;
+  height: 100vh;
   text-transform: none;
   color: $gray;
   font-family: $myriadpro;
@@ -152,10 +152,16 @@
   margin-top: -30px;
 }
 
+@media (min-width: $tablet-width) {
+  .popup {
+    overflow: auto;
+    height: auto;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .popup {
     padding: 3vw 0;
-    overflow: auto;
   }
 
   .popup__close-btn {

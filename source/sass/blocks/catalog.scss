@@ -23,6 +23,13 @@
   @include list-reset;
 }
 
+@media (min-width: $tablet-width) {
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .catalog {
     margin-top: 3vw;
@@ -31,10 +38,5 @@
 
   .catalog__title {
     font-size: 2.9vw;
-  }
-
-  .catalog__list {
-    display: flex;
-    flex-wrap: wrap;
   }
 }

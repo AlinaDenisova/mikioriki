@@ -1,7 +1,9 @@
 .catalog-card {
   display: flex;
+  flex-direction: column;
   border: 1px solid #e2e5e6;
   margin-bottom: 1.3vw;
+  padding: 0 20px;
 
   &:hover,
   &:focus,
@@ -11,8 +13,7 @@
 }
 
 .catalog-card__img {
-  width: 50%;
-  margin-right: 3.3%;
+  width: 100%;
   display: flex;
   align-items: center;
 
@@ -26,8 +27,8 @@
 .catalog-card__text {
   font-family: $myriadpro;
   color: $gray;
-  width: 50%;
-  margin-top: 30px;
+  width: 100%;
+  margin-top: 10px;
   margin-bottom: 30px;
   display: flex;
   flex-direction: column;
@@ -68,14 +69,31 @@
 }
 
 @media (min-width: $tablet-width) {
+  .catalog-card {
+    flex-direction: row;
+    width: 48.2%;
+    padding: 0;
+    margin-right: 2%;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+
   .catalog-card__text {
+    justify-content: flex-start;
     padding-right: 5%;
+    width: 50%;
+  }
+
+  .catalog-card__img {
+    width: 50%;
+    margin-right: 3.3%;
   }
 }
 
 @media (min-width: $desktop-width) {
   .catalog-card {
-    width: 48.2%;
     margin-right: 3.1%;
 
     &:nth-child(2n) {
@@ -84,12 +102,14 @@
   }
 
   .catalog-card__img {
-    width: 50%;
+    width: 35%;
+    margin-right: 2.3vw;
+    justify-content: flex-start;
   }
 
   .catalog-card__text {
-    margin-top: 4.5vw;
-    margin-bottom: 4.5vw;
+    margin-top: 4.3vw;
+    margin-bottom: 2.7vw;
   }
 
   .catalog-card__title {
@@ -99,18 +119,19 @@
 
   .catalog-card__add {
     font-size: 1.1vw;
-    margin-bottom: 1.5vw;
+    margin-bottom: 2vw;
   }
 
   .catalog-card__descr {
     font-size: 1.1vw;
-    margin-bottom:  1.6vw;
+    margin-bottom: 2vw;
   }
 
   .catalog-card__btn {
-    width: 70%;
+    width: 65%;
     padding: 0 2vw;
     max-width:  none;
+    border: 0.3vw solid #e2e5e6;
   }
 }
 

@@ -1,7 +1,7 @@
 .page-footer {
   background-color: #5eb8ac;
   font-family:  $circe;
-  background-image: (to bottom, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0) 30%,rgba(0,0,0,0) 36%,rgba(0,0,0,0) 41%,rgba(0,0,0,0) 47%,rgba(0,0,0,0) 55%,rgba(0,0,0,0) 66%,rgba(0,0,0,0.02) 70%,rgba(0,0,0,0.18) 99%,rgba(0,0,0,0.19) 100%);
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0) 30%,rgba(0,0,0,0) 36%,rgba(0,0,0,0) 41%,rgba(0,0,0,0) 47%,rgba(0,0,0,0) 55%,rgba(0,0,0,0) 66%,rgba(0,0,0,0.02) 70%,rgba(0,0,0,0.18) 99%,rgba(0,0,0,0.19) 100%);
 }
 
 .page-footer__container {
@@ -77,6 +77,13 @@
   background-size: cover;
   background-repeat: no-repeat;
   margin-right: 2%;
+  cursor: pointer;
+
+  &:hover,
+  &:focus,
+  &:active {
+    opacity: 0.5;
+  }
 
   &--vk {
     background-image: url('../img/icon-vk.png');
