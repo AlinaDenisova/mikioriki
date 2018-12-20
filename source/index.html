@@ -12,6 +12,7 @@
     <link rel="preload" href="fonts/PTSans-Bold.woff2" as="font" crossorigin="">
     <link rel="preload" href="fonts/PTSans-Regular.woff2" as="font" crossorigin="">
     <link href="css/style.css" rel="stylesheet">
+    <script src="js/canvas-video-player.js"></script>
   </head>
 
   <body class="no-js">
@@ -48,14 +49,16 @@
       </div>
 
       <section class="promo-video">
-        <video id="video-start" hidden muted="muted">
-          <source src="video/start.mp4" type="video/mp4" width="1506" height="870">
-        </video>
-        <video id="video-end" hidden muted="muted">
-          <source src="video/start.mp4" type="video/mp4" width="1506" height="870">
-        </video>
-        <div>
-          <canvas class="promo-video__canvas" id="myCanvas" width="1506" height="870">
+        <div class="promo-video__responsive-video">
+          <video class="promo-video__video-start promo-video__video-start--active" id="video-start" autoplay="autoplay" muted="muted">
+            <source src="video/start.mp4" type="video/mp4">
+          </video>
+          <video class="promo-video__video-end" id="video-end" loop="loop" muted="muted" autoplay="autoplay">
+            <source src="video/end.mp4" type="video/mp4">
+          </video>
+          <div>
+          <canvas class="promo-video__canvas"></canvas>
+          </div>
         </div>
       </section>
     </header>
