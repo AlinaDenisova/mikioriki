@@ -60,6 +60,7 @@ window.navigation = (function () {
 $(function(){
 
 var isIOS = /iPad|iPhone|iPod/.test(navigator.platform);
+var isAndroid = /(android)/i.test(navigator.userAgent);
 
 if (isIOS) {
 
@@ -101,6 +102,29 @@ if (isIOS) {
 
     $videostart.on("ended", playEndVideo);
 
+
+    } else if (isAndroid) {
+      var $videostart = $("#video-start");
+      var $videoend = $("#video-end");
+
+      window.addEventListener('touchstart', function videoStart() {
+        videostart.play();
+        this.removeEventListener('touchstart', videostart);
+      });
+
+      var playEndAndroidVideo = function () {
+        videoend.play();
+      }
+
+      document.querySelectorAll('.promo-video__canvas')[0].style.display = 'none';
+
+      var hideVideoStart = function () {
+        $videostart.removeClass("promo-video__video-start--active");
+        $videoend.addClass("promo-video__video-end--active");
+      };
+
+      $videostart.on("ended", hideVideoStart);
+      $videostart.on("ended", playEndAndroidVideo);
     } else {
 
     var $videostart = $("#video-start");
