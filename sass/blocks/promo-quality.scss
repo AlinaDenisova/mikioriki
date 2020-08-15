@@ -1,0 +1,70 @@
+.promo-quality {
+  background-color: #cd4e47;
+}
+
+.promo-quality__container {
+  @include container;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 60vw;
+  background-image: url('/img/ribbon.png'), url('/img/quality-bg.jpg');
+  background-size: 50vw 70%, 100%;
+  background-repeat: no-repeat, no-repeat;
+  background-position: 50% 0, 0 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.promo-quality__title {
+  margin: 0;
+  font-family: $ptsans-bold;
+  font-size: 7vw;
+  line-height: 0.82;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 2vw;
+  text-align: center;
+
+  & a {
+    color: inherit;
+  }
+
+  & a:hover,
+  & a:focus,
+  & a:active {
+    opacity: 0.5;
+  }
+}
+
+.promo-quality__text {
+  color: #ffffff;
+  font-size: 4vw;
+  line-height: 1.27;
+  margin: 0;
+  text-align: center;
+}
+
+@media (min-width: $desktop-width) {
+  .promo-quality {
+    width: 38.5%;
+  }
+
+  .promo-quality__container {
+    padding: 50px 8%;
+    min-height: 30.5vw;
+    background-size: 25vw 70%, cover;
+    background-position: 50% 0, 0 0;
+  }
+
+  .promo-quality__title {
+    font-size: 3.8vw;
+    text-align: left;
+  }
+
+  .promo-quality__text {
+    font-size: 1.45vw;
+    text-align: left;
+  }
+}

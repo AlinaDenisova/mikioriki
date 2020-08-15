@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Мармелад, продажа, купить, конфеты, пищевой, высокое, качество, желейный, фрктовый, сок">
+    <meta name="description" content="Интернет-магазин «Mikioriki» - вкусный и полезный мармелад">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Интернет-магазин «Milioriki»</title>
+    <link rel="preload" href="fonts/Circe-Regular.woff2" as="font" crossorigin="">
+    <link rel="preload" href="fonts/MyriadPro-Bold.woff2" as="font" crossorigin="">
+    <link rel="preload" href="fonts/MyriadPro-Regular.woff2" as="font" crossorigin="">
+    <link rel="preload" href="fonts/PTSans-Bold.woff2" as="font" crossorigin="">
+    <link rel="preload" href="fonts/PTSans-Regular.woff2" as="font" crossorigin="">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+
+  <body class="no-js">
+    <header class="page-header page-header--closed page-header--inner">
+      <div class="page-header__container">
+        <div class="page-header__logo">
+          <a class="page-header__logo-link" href="index.html">
+            <picture class="page-header__logo-img">
+              <source media="(min-width: 1100px)" srcset="img/logo.png">
+              <img src="img/logo-small.png" alt="Логотип интрнет-магазина «Mikioriki»">
+            </picture>
+          </a>
+        </div>
+
+        <button class="page-header__toggle" type="button">
+          <span class="page-header__toggle-line"></span>
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+
+        <ul class="site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="catalog.html">Продукция</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--active">Качество и безопасность</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="contacts.html">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <section class="contacts">
+        <div class="contacts__container">
+          <h1 class="contacts__title">Контакты</h1>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <p class="contacts__info">ООО «БРЕНТА», <br>141292, Московская область, г.&nbsp;Красноармейск, ул. Свердлова, д. 33</p>
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__info contacts__info--tel" href="tel:+7(495)2337461"> +7 (495) 233-74-61</a>
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__info" href="mailto:contact@mikoriki.com">contact@mikoriki.com</a>
+            </li>
+          </ul>
+        </div>
+        <div class="contacts__map"></div>
+      </section>
+
+      <secton class="contacts-form">
+        <div class="contacts-form__container">
+          <h1 class="contacts-form__title">Есть предложения? Напишите нам!</h1>
+          <form action="" method="post">
+            <div class="contacts-form__field-wrapper">
+              <label class="visually-hidden" for="user-name">Представьтесь:</label>
+              <input class="contacts-form__field" id="user-name" type="text" name="user-name" placeholder="Представьтесь">
+              <label class="visually-hidden" for="user-contacts">Как с вами связаться?</label>
+              <input class="contacts-form__field" id="user-contacts" type="text" name="user-contacts" placeholder="Как с вами связаться?">
+            </div>
+            <div class="contacts-form__field-wrapper">
+              <label class="visually-hidden" for="user-message">Текст сообщения</label>
+              <textarea class="contacts-form__field contacts-form__field--textarea" id="user-message" name="user-message" placeholder="Текст сообщения"></textarea>
+            </div>
+            <button class="btn contacts-form__btn">Отправить</button>
+          </form>
+        </div>
+      </secton>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__container">
+        <div class="page-footer__wrapper">
+          <div class="page-footer__logo">
+            <a class="page-footer__logo-link">
+              <img src="img/logo-small.png" width="200" height="44" alt="Логотип компании «Mikioriki»">
+            </a>
+          </div>
+          <div class="page-footer__copyright">
+            <p class="page-footer__copyright-text">© ООО «Брента»</p>
+          </div>
+        </div>
+
+        <div class="page-footer__social">
+          <ul class="page-footer__social-list">
+            <li class="page-footer__social-item">
+              <a class="page-footer__social-link page-footer__social-link--vk" href="#">
+                <span class="visually-hidden">Vk</span>
+              </a>
+            </li>
+            <li class="page-footer__social-item">
+              <a class="page-footer__social-link page-footer__social-link--fb" href="#">
+                <span class="visually-hidden">Facebook</span>
+              </a>
+            </li>
+            <li class="page-footer__social-item">
+              <a class="page-footer__social-link page-footer__social-link--youtube" href="#">
+                <span class="visually-hidden">Youtube</span>
+              </a>
+            </li>
+            <li class="page-footer__social-item">
+              <a class="page-footer__social-link page-footer__social-link--inst" href="#">
+                <span class="visually-hidden">Instagram</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="page-footer__development">
+          <a class="page-footer__development-link" href="https://pixelplus.ru/">
+            <span class="page-footer__development-text">Создание сайта&nbsp;– <br>компания «Пиксель Плюс»</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <div class="overlay"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWdibyID8p4mef8VL189j43LvTFOm_QpI&callback=initMap"></script>
+    <script src="js/map.js"></script>
+    <script src="js/picturefill.js"></script>
+    <script src="js/all.js"></script>
+  </body>
+</html>
